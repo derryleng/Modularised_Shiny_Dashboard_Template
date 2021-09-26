@@ -30,3 +30,35 @@ sidebarTabUI <- function(id, text_str, icon_str) {
     icon = icon(icon_str)
   )
 }
+
+pickerInput_customised <- function(
+  inputId,
+  label = NULL,
+  choices = NULL,
+  selected = NULL,
+  multiple = T,
+  options = pickerOptions(
+    container = "body",
+    actionsBox = T,
+    liveSearch = T,
+    virtualScroll = T,
+    width = "auto"
+  ),
+  choicesOpt = NULL,
+  width = "220px",
+  inline = F,
+  ...
+) {
+  pickerInput(
+    inputId = inputId,
+    label = label,
+    choices = choices,
+    selected = selected,
+    multiple = multiple,
+    options = options,
+    choicesOpt = choicesOpt,
+    width = width,
+    inline = inline,
+    ...
+  )
+}

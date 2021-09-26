@@ -1,40 +1,49 @@
+:root {
+  --theme-color-1: #000000;
+  --theme-color-2: #222d32;
+}
+
 .skin-red .main-header .logo {
-    background-color: #D51067;
+    background-color: var(--theme-color-1);
 }
 
 .skin-red .main-header .logo:hover {
-    background-color: #D51067;
+    background-color: var(--theme-color-1);
 }
 
 .skin-red .main-header .navbar {
-    background-color: #D51067;
+    background-color: var(--theme-color-1);
 }
 
 .skin-red .main-header .navbar .sidebar-toggle:hover {
-    background-color: #802245;
+    background-color: var(--theme-color-2);
 }
 
 .skin-red .sidebar-menu>li.active>a,.skin-red .sidebar-menu>li:hover>a {
-    border-left-color: #D51067;
+    border-left-color: var(--theme-color-1);
 }
 
 .nav-tabs-custom>.nav-tabs>li.active {
-    border-top-color: #D51067;
+    border-top-color: var(--theme-color-1);
 }
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-    background-color: #D51067;
-    border-color: #D51067;
+    background-color: var(--theme-color-1);
+    border-color: var(--theme-color-1);
 }
 
 .box.box-solid.box-primary {
-    border: 1px solid #D51067;
+    border: 1px solid var(--theme-color-1);
 }
 
 .box.box-solid.box-primary>.box-header {
     color: #fff;
-    background: #D51067;
-    background-color: #D51067;
+    background: var(--theme-color-1);
+    background-color: var(--theme-color-1);
     margin: -1px;
     border-radius: 3px;
+}
+
+.header_button:hover {
+  background-color: var(--theme-color-2);
 }

@@ -13,5 +13,5 @@ sidebarWidth <- "160px"
 #       > Use "" for icon_str to specify no icon
 sidebarSettings <- list(
   example_1 = c("Example 1", "smile"),
-  example_2 = c("Example 2", "")
+  example_2 = c("Example 2", "frown")
 )

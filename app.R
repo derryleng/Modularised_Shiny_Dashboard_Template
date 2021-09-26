@@ -20,8 +20,10 @@
 
 })("req.txt", silent = F)
 
+# Imports from all mod_ui.R and mod_server.R files
 invisible(lapply(list.files(path = "modules/", pattern = "mod_ui.R|mod_server.R", recursive = T, full.names = T), source))
 
+# Imports from settings.R and functions.R
 invisible(lapply(list.files(pattern = "settings.R|functions.R"), source))
 
 # ----------------------------------------------------------------------- #
@@ -85,6 +87,9 @@ ui <- dashboardPage(title = "Modularised Shiny Dashboard", skin = "red", header,
 # ----------------------------------------------------------------------- #
 
 server <- function(input, output, session) {
+
+  # Example header button dialogue
+  onclick("header_test", showModal(modalDialog("Example header button")))
 
   # Stop app on session end
   session$onSessionEnded(function() {

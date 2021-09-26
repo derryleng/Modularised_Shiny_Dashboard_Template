@@ -6,7 +6,7 @@ example_1_ui <- function(id) {
 	        width = NULL,
 	        collapsible  = T,
 	        collapsed = F,
-	        pickerInput(ns("dropdown1"), "Numbers", seq(1, 10, 1)),
+	        pickerInput_customised(ns("dropdown1"), "Numbers", seq(1, 10, 1)),
 	        textOutput(ns("out"))
 	    )
 	)
