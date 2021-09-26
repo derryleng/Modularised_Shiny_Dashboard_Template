@@ -1,0 +1,66 @@
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+/* Header */
+
+.header_button {
+  width: 45px;
+  height: 50px;
+  color: white;
+  padding: 15px 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header_button:hover {
+  background-color: #802245;
+  cursor: pointer;
+}
+
+/* Leaflet Wrapper */
+
+#track_visualiser-pltmap {
+  height: calc(100vh - 50px) !important;
+  z-index: 1;
+}
+
+#track_visualiser-pltmap_filters_ui {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+  padding: 1px 1px 3px 1px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  background: rgba(85, 87, 89, 0.5);
+  box-shadow: none;
+}
+
+/* Leaflet */
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  background: rgb(85, 87, 89);
+  background: rgba(85, 87, 89, 0.5);
+  color: #FFFFFF;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: rgb(85, 87, 89);
+  background: rgba(85, 87, 89, 0.5);
+  color: #FFFFFF;
+}
+
+/* pickerInput corner background fix */
+
+.bootstrap-select:not(.input-group-btn), .bootstrap-select[class*=col-] {
+  background: none;
+}
+
+/* datatable adjustments */
+
+.dataTables_row {
+  display: flex;
+  justify-content: space-between;
+}
